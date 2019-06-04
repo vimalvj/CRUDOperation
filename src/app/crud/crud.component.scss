@@ -1,0 +1,52 @@
+.container{
+    margin-top: 70px;
+}
+::ng-deep .cdk-overlay-container{
+    z-index: 1200 !important;
+}
+
+.form-control{
+    border-radius:0px;
+  }
+  .half-width{
+    width:45%;
+    float:left;
+    margin-bottom: 15px;
+  }
+  .right-margin{
+    margin-right:5%;
+   }
+   #RequiredLabel{
+    color: red;
+   }
+   label.required:before
+{
+  color: red;
+  content: "* ";
+}
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+    color: red;
+}
+
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
+    color: green;
+}
+input[type="date"]:before {
+    content: "" !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+  table {
+    width: 100%;
+  }
+  th.mat-sort-header-sorted {
+    color: black;
+  }
